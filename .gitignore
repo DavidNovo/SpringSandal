@@ -23,10 +23,5 @@
 hs_err_pid*git status
 
 # Intelij
-.idea/.gitignore
-.idea/SpringSandal.iml
-.idea/checkstyle-idea.xml
-.idea/codeStyles/
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
+.idea/*
+
