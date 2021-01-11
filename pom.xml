@@ -20,7 +20,18 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
       <groupId>org.springframework.boot</groupId>
     </dependency>
-
+    <!-- dependencies for Swagger and OpenAPI 3.0 -->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-boot-starter</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+    <!-- end of dependencies for Swagger -->
     <dependency>
       <artifactId>spring-boot-starter-test</artifactId>
       <exclusions>
