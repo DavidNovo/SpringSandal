@@ -1,5 +1,6 @@
 package com.example.springsandal.configuration;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -16,12 +17,16 @@ import springfox.documentation.spring.web.plugins.Docket;
  */
 @Configuration
 public class SpringFoxConfig {
+  @Value("${swagger.enable}")
+  private boolean isEnableSwagger;
+
   @Bean
   public Docket api() {
     return new Docket(DocumentationType.OAS_30)
         .select()
         .apis(RequestHandlerSelectors.any())
         .paths(PathSelectors.any())
-        .build();
+        .build()
+        .enable(isEnableSwagger);
   }
 }

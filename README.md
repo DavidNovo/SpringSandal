@@ -19,3 +19,5 @@ These are default endpoints used to monitor the health and characterists of the 
 
 By default, the endpoints start with the prefix of '/actuator' and append the specific endpoint.  See https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html for a complete list.
 
+Location os swagger docs
+http://localhost:8080/swagger-ui/index.html
